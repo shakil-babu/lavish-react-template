@@ -22,12 +22,12 @@ const Navbar = () => {
                 <div className="navbar-container container">
                    <div className="nav-des">
                    <MdFingerprint className='navbar-icon'/>
-                    <NavLink to='/' className='navbar-logo' onClick={clickHandler} >LAVISH</NavLink>
+                    <NavLink to='/' className='navbar-logo' >LAVISH</NavLink>
                    </div>
                     <div className="menu-icons" onClick={clickHandler}>
                     {click ? <FaTimes/> : <FaBars/>}
                     </div>
-                    <ul className={click ? 'nav-menu':'nav-menu'} >
+                    <ul className='nav-menu' >
                         
                         <li  className="nav-item">
                             <NavLink exact activeStyle={ActiveColor} to='/' className='nav-link'>Home</NavLink>
